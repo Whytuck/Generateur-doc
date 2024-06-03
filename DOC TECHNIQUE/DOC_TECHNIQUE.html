@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" >
+    <title>Document Technique</title>
+</head>
+<body>
+    <header>
+        <h1>Référence du fichier code.c</h1>
+    </header>
+    <main>
+        <section>
+            <h3>#include stdlib.h</h3>
+            <h3>#include stdio.h</h3>
+            <h3>#include stdbool.h</h3>
+        </section>
+        <section>
+            <h2>Macros</h2>
+            <h3>#define TAILLE 9</h3>
+            <p>Programme d'un jeu sudoku. </p>
+        </section>
+        <section>
+            <h2>Définitions de type</h2>
+            <h3>typedef int t_Grille[TAILLE][TAILLE]</h3>
+        </section>
+        <section>
+            <h2>Fonctions</h2>
+
+            <h3>void afficherGrille (t_Grille g)</h3>
+            <p>Affichage</p>
+            <h4>Paramètres</h4>
+            <ul>   
+                <li><strong>g</strong> paramètre utilisé lors de l'utilisation du tableau </li>
+            </ul>
+        </section>
+        <section>
+            <h3>void chargerGrille (t_Grille g)</h3>
+            <p>Procédure qui charge la grille appelé par le joueur. </p>
+            <h4>Paramètres</h4>
+            <ul>   
+                <li><strong>g</strong> paramètre utilisé lors de l'utilisation du tableau </li>
+            </ul>
+        </section>
+        <section>
+            <h3>bool possible (t_Grille g, int numLigne, int numColonne, int valeur)</h3>
+            <p>Fonction qui vérifie les règles du sudoku. </p>
+            <h4>Paramètres</h4>
+            <ul>
+                <li><strong>g</strong> paramètre utilisé lors de l'utilisation du tableau </li>
+                <li><strong>numLigne</strong> paramètre correspondant au numéro de ligne </li>
+                <li><strong>numColonne</strong> paramètre correspondant au numéro de colonne </li>
+                <li><strong>valeur</strong> paramètre correspondant a la valeur à insérer</li>
+            </ul>
+            <h4>Renvoie</h4>
+            <h3>True</h3><p>La valeur respecte les règles du sudoku </p>
+            <h3>False</h3><p>La valeur ne respecte pas les règles du sudoku</p>
+        </section>
+        <section>
+            <h3>void saisir (int *valeursaisie)</h3>
+            <p>Fonction qui teste la valeur inséré</p>
+            <h4>Paramètres</h4>
+            <ul> 
+                <li><strong>*valeursaisie</strong> paramètre qui renvoie une valeur entière compris entre 1 et 9</li>
+            </ul>
+        </section>
+        <section>
+            <h3>bool verifierGrille (t_Grille g)</h3>
+            <p>Vérifier grille. </p>
+            <h4>Paramètres</h4>
+            <ul>   
+                <li><strong>g</strong> paramètre utilisé lors de l'utilisation du tableau </li>
+            </ul>
+            <h4>Renvoie</h4>
+            <h3>TRUE</h3><p>Il y a encore des cases vides dans la grille </p>
+            <h3>FALSE </h3><p>Il n'y a plus de cases vides dans la grille </p>
+        </section>
+        <section>
+            <h2>Main</h2>
+            <h3>int main ()</h3>
+            <p>Tant que la grille n'est pas pleine continuer</p>
+            <p>Si au coordonné rentré par le joueur il y a un chiffre entre 1 et 9 alors la case n'est pas libre</p>
+            <p>valeur + 1 parce que pour les coordonnés on enlève 1 et qu'on ne veut pas enlever 1 à la valeur</p>
+            <p>Si cela respecte les règles du sudoku </p>
+        </section>
+    </main>
+</html>

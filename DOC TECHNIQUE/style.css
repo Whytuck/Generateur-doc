@@ -1,0 +1,22 @@
+body {
+    font-family: 'Arial' , 'Calibri';
+    background-color: aliceblue;
+}
+h3 {
+    font-family: 'Courier New', Courier, monospace;
+}
+header {
+    text-align: center;
+}
+section{
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    padding: 1em;
+    border-radius: 10px ;
+    background-color: azure;
+    margin: 1em;
+}
+p {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
